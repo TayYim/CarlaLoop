@@ -94,22 +94,7 @@ ipython_config.py
 #   install all needed dependencies.
 #Pipfile.lock
 
-# poetry
-#   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.
-#   This is especially recommended for binary packages to ensure reproducibility, and is more
-#   commonly ignored for libraries.
-#   https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control
-#poetry.lock
-
-# pdm
-#   Similar to Pipfile.lock, it is generally recommended to include pdm.lock in version control.
-#pdm.lock
-#   pdm stores project-wide configurations in .pdm.toml, but it is recommended to not include it
-#   in version control.
-#   https://pdm.fming.dev/#use-with-ide
-.pdm.toml
-
-# PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm
+# PEP 582; used by e.g. github.com/David-OConnor/pyflow
 __pypackages__/
 
 # Celery stuff
@@ -152,9 +137,63 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 
-# PyCharm
-#  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
-#  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
-#  and can be added to the global gitignore or merged into this file.  For a more nuclear
-#  option (not recommended) you can uncomment the following to ignore the entire idea folder.
-#.idea/
+# From previous repo
+
+# Compiled sources
+*.pyc
+build/
+dist/
+
+# Setup
+**.egg*
+
+# Jupyter notebooks
+**.ipynb_checkpoints*
+
+# Sphinx documentation
+_build
+
+# Editor files
+.idea
+
+# Test files
+.pytest_cache
+.cache
+
+# Outputs
+**/out/*
+output/
+json_log/
+
+# Model file
+**.zip
+**.png
+**.jpg
+**.pkl
+**.p
+**.pickle
+**.svg
+**.csv
+**.mp3
+**.mp4
+
+/scripts/highway_dqn/
+
+/highway_env.egg-info
+
+/scripts/videos/
+
+/scripts/json_log/
+
+# Mac OS
+.DS_Store
+
+venv
+
+output_*.txt
+
+wandb/
+
+exp_output_data/
+
+epoch_result.json

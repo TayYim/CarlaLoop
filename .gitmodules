@@ -1,0 +1,8 @@
+[submodule "leaderboard"]
+	path = leaderboard
+	url = https://github.com/TayYim/leaderboard.git
+	branch = carlaloop
+[submodule "scenario_runner"]
+	path = scenario_runner
+	url = https://github.com/TayYim/scenario_runner.git
+	branch = carlaloop
