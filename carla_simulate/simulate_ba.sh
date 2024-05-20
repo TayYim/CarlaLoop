@@ -10,7 +10,7 @@ done < <(python3 -c "import json, sys, os; \
     print('\n'.join([f'{k}={v}' for k, v in env.items()]));")
 
 export PYTHONPATH=${HIGHWAY_SCEN_GEN_ROOT}:${PYTHONPATH}
-export PYTHONPATH="${CARLA_ROOT}/PythonAPI/carla/":"${CARLA_ROOT}/PythonAPI/carla/dist/carla-0.9.14-py3.7-linux-x86_64.egg":${PYTHONPATH}
+export PYTHONPATH="${CARLA_ROOT}/PythonAPI/carla/":"${CARLA_ROOT}/PythonAPI/carla/dist/carla-0.9.15-py3.7-linux-x86_64.egg":${PYTHONPATH}
 export PYTHONPATH="${SCENARIO_RUNNER_ROOT}":"${LEADERBOARD_ROOT}":${PYTHONPATH}
 
 # Process route id passed as argument
