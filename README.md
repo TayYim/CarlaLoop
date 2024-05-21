@@ -73,7 +73,7 @@ git clone --recurse-submodules https://github.com/TayYim/CarlaLoop.git
 
 ```bash
 cd CarlaLoop
-conda env create -n carlaloop python=3.10
+conda create -n carlaloop python=3.10
 conda activate carlaloop
 pip install -r requirements.txt
 ```
@@ -93,8 +93,9 @@ pip install -r requirements.txt
 
 Modify `config.json`:
 - CARLA_ROOT: the path to your Carla installation
-- SCENARIO_RUNNER_ROOT: the path to your scenario_runner installation
-- LEADERBOARD_ROOT: the path to your leaderboard installation
+- CARLALOOP_ROOT: the path to your CarlaLoop installation
+- SCENARIO_RUNNER_ROOT: the path to your scenario_runner installation inside CarlaLoop
+- LEADERBOARD_ROOT: the path to your leaderboard installation inside CarlaLoop
 - ROUTE_FILE: by default, it is "routes_carlaloop.xml". If you don't want to use the default routes, you can create your own routes and modify this value.
 - LB_PYTHON_PATH: the path to the python executable in the "lb" environment
 
@@ -190,7 +191,7 @@ git clone https://github.com/autonomousvision/carla_garage.git
 ```bash
 cd carla_garage
 sudo apt install build-essential -y
-conda env create -f environment.yml
+conda create -f environment.yml
 conda activate garage
 ```
 

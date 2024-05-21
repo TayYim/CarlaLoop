@@ -5,7 +5,7 @@
     "LEADERBOARD_ROOT": "/home/tay/Workspace/CarlaLoop/leaderboard",
     "ROUTE_FILE": "routes_carlaloop.xml",
     "LB_PYTHON_PATH": "/home/tay/miniconda3/envs/py38/bin/python",
-    "HIGHWAY_SCEN_GEN_ROOT": "/home/tay/Workspace/highway-scen-gen",
+    "CARLALOOP_ROOT": "/home/tay/Workspace/CarlaLoop",
     "INTERFUSER_PYTHON_PATH": "/home/tay/miniconda3/envs/interfuser/bin/python",
     "INTERFUSER_ROOT": "/home/tay/Workspace/LB-agents/InterFuser",
     "TFPP_PYTHON_PATH": "/home/tay/miniconda3/envs/garage/bin/python",
